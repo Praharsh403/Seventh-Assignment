@@ -1,0 +1,37 @@
+Virtual Studio Code – PostgreSQL and CP(Python):
+
+In this activity, I first connected with Psycopg2 as it helps in communicating with Postgres.
+
+import psycopg2
+connect = connect(dbname="",user="",password="",host="",port="")   (db here is Database)
+
+Here I have tried to establish a connection hence used information from my Postgres to complete the above command.
+
+When the connection was successful, the program printed a message saying "Connected Successfully".
+
+
+2) Once the initial activity was done I moved to creating a table. And so again took the example of owner_details from previous task of people living in the society in different blocks with their name and apartment number. Hence as part of learning I created:
+cursor = connect.cursor()   #as per my understanding cursor is an object that allows python to talk to database.
+cursor.execute('''create table owner_details(Name Text,Block Text,Number int)
+connect.commit()
+connect.close()
+
+3)As per feedback received have tried to incorporate the changes and considered the errors while moving forward in creation as well as insertion of data. Hence while insertion of data tried the try except method.
+
+4)Extraction of data 
+
+I also tested retrieving data from the table to make sure the records were stored correctly in the database.
+
+While testing the program I initially received a syntax error in the SQL query, but after correcting the query format the table was created successfully and the program ran without errors.
+
+5) Adding input from user was an added learning though it came better understanding and also after initial error and correcting presentation I was able to complete the task.
+
+Order:
+1)table()
+2)data()
+3)extract()
+4)user_input()
+
+Learning:
+
+Through this activity I learned how Python programs can connect to a PostgreSQL database, execute SQL commands, create tables, and store data inside the database along with taking user inputs.
