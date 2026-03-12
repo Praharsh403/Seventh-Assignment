@@ -1,0 +1,39 @@
+PostgreSQL Practical Task Summary
+
+1) Created Database which consist of name of the owner of individual flat with their block and apartment number.
+
+Hence, I created a database using:
+
+create database society;
+
+To check the databases present in the system I used:
+\l
+
+2)Then I connected to the new database using:
+\c society, so i can go forward and do further task which is next in line.
+
+
+3) Creating a table which will have the details of the owners hence;
+
+create table owner_details(Name Text,Block Text,Number int);
+Further to that,
+
+4) Insertion of data through:
+insert into owner_details(Name,Block,Number) values('Anupam','L',101);
+
+5) Retrieving of Data through its various ways:
+select * from owner_details
+select Name form owner_details
+select * from owner_details where Block='L'
+
+
+5)Filly I tested deletion commands such as:
+
+truncate table owner_details;
+drop database society;
+
+Learnings:
+1) Learned to create database in Postgre SQL and how to switch to any database where actions or work needs to be performed.
+2) creating table that can contain data for any set of information which can be used to store for various kind of analysis. Just like i tried to store data of people living in different blocks under different apartments in the same society.
+3)Didn't just learned to retrieve data but conditional retrieval of data as per requirement instead of going through the entire pool of data.
+4) At last learned how to delete contents from a table and how to delete an entire database.
